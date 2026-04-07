@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #74b9ff, #a29bfe);
+    background-attachment: fixed;
+    transition: background 0.5s ease;
+}
+
+body.dark-mode {
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    color: #ecf0f1;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    animation: fadeIn 2s ease-in;
+}
+
+body.dark-mode h1 {
+    color: #ecf0f1;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+body.dark-mode h2 {
+    color: #ecf0f1;
+    border-bottom-color: #ecf0f1;
+}
+
+h2:hover {
+    color: #ffd700;
+}
+
+p {
+    margin: 10px 0;
+    color: #fff;
+}
+
+body.dark-mode p {
+    color: #ecf0f1;
+}
+
+ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+    color: #fff;
+    transition: transform 0.2s ease;
+}
+
+body.dark-mode li {
+    color: #ecf0f1;
+}
+
+li:hover {
+    transform: translateX(10px);
+    color: #ffd700;
+}
+
+.contact {
+    text-align: center;
+    margin-bottom: 20px;
+    background: rgba(255,255,255,0.1);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+body.dark-mode .contact {
+    background: rgba(255,255,255,0.05);
+}
+
+.section {
+    margin-bottom: 20px;
+    background: rgba(255,255,255,0.1);
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+body.dark-mode .section {
+    background: rgba(255,255,255,0.05);
+}
+
+.section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+#theme-toggle {
+    display: block;
+    margin: 0 auto 10px;
+    padding: 10px 20px;
+    background: #ffd700;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#theme-toggle:hover {
+    background: #ffed4e;
+}
